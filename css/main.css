@@ -1,0 +1,549 @@
+/*! HTML5 Boilerplate v7.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+* What follows is the result of much research on cross-browser styling.
+* Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+* Kroc Camen, and the H5BP dev community and team.
+*/
+
+
+/* ==========================================================================
+Base styles: opinionated defaults
+========================================================================== */
+
+html {
+color: #222;
+font-size: 1em;
+line-height: 1.4;
+}
+
+
+/*
+* Remove text-shadow in selection highlight:
+* https://twitter.com/miketaylr/status/12228805301
+*
+* Vendor-prefixed and regular ::selection selectors cannot be combined:
+* https://stackoverflow.com/a/16982510/7133471
+*
+* Customize the background color to match your design.
+*/
+
+::selection {
+background: #b3d4fc;
+text-shadow: none;
+}
+
+/*
+* A better looking default horizontal rule
+*/
+
+hr {
+display: block;
+height: 1px;
+border: 0;
+border-top: 1px solid #ccc;
+margin: 1em 0;
+padding: 0;
+}
+
+/*
+* Remove the gap between audio, canvas, iframes,
+* images, videos and the bottom of their containers:
+* https://github.com/h5bp/html5-boilerplate/issues/440
+*/
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+vertical-align: middle;
+}
+
+/*
+* Remove default fieldset styles.
+*/
+
+fieldset {
+border: 0;
+margin: 0;
+padding: 0;
+}
+
+/*
+* Allow only vertical resizing of textareas.
+*/
+
+textarea {
+resize: vertical;
+}
+
+/* ==========================================================================
+Browser Upgrade Prompt
+========================================================================== */
+
+.browserupgrade {
+margin: 0.2em 0;
+background: #ccc;
+color: #000;
+padding: 0.2em 0;
+}
+
+
+
+
+/* ==========================================================================
+Author's custom styles
+========================================================================== */
+/* --------------- Start Body Styles ------------------ */
+
+
+/* --- END Body Styles --- */
+body {
+   color: #222222;
+   background-color: #fcfafa;
+}
+
+body, .header__callout, .nav .nav__list {
+   margin: 0;
+}
+
+.container {
+   background: #6c8d85e0;
+}
+
+/* --------------- Start Header Styles ------------------ */
+
+.header {
+   background: #1d3939;
+   color: #FFF;
+   
+}
+
+.header__callout {
+   text-align: center;
+   font: bold 250% Verdana, Arial, Helvetica, sans-serif;
+}
+
+.type {
+   display: block;
+   text-align: center;
+   margin: 2rem auto;
+}
+
+.span__mask {
+   font: 1.3rem 'Ephesis', cursive; 
+}
+
+.span__insp {
+   font: 1rem 'Cherish', cursive;
+}
+/* --- END Header Styles --- */
+
+
+/* --- Start Nav Styles --- */
+
+.nav {
+   text-align: center;
+}
+
+.nav .nav__list {
+   padding: 0.4rem;
+   background-color: #6f8c85;
+}
+
+.nav .nav__list li {
+   list-style-type: none;
+   display: inline-block;
+   padding: 0.6em;
+} 
+
+.nav .nav__list .nav__link {
+   padding: 0.5rem;
+   color: rgb(33, 53, 51);
+   font-size: 1.1rem;
+   font-weight: 600;
+   text-decoration: none;
+   background-color: #9dcfbd;
+   border-radius: 0.4em;
+}
+
+.nav__link:focus,
+.nav__link:hover,
+.nav__link:active {
+   color: #1a1a1a;
+   text-shadow: 0.2rem 0.1rem 0.3rem #9ca3a8;
+}
+
+/* --- END Nav Styles --- */
+
+/* --------------- Start Main Styles ------------------ */
+
+.main {
+   padding: 0 0.5rem;  
+   
+   /* background: url("../img/hd.png") 1140px 180px no-repeat fixed; */
+}
+
+.btn {
+   background: #1c3830;
+   border-radius: 20px;
+   color: #fafafa;
+   font-size: 1.2em;
+   font-weight: 100;
+   padding: 0.8em;
+   box-shadow: 1px 1px 20px 0 #000000;
+   border: solid #337FED 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.btn:hover {
+   border: solid #337FED 1px;
+   background: #38807c;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+.main p {
+   font-size: 0.8rem;
+   line-height: 1;
+}
+
+h2 {
+   margin-left: 2rem;
+}
+
+.main__item {
+   color: #FFF;
+}
+
+.main__img{
+   text-align: center;
+   padding-right: 10px;
+}
+
+.img__mask {
+   max-width: 100%;
+   height: auto;
+   background: #fafafa;
+   display: block;
+   margin: 0 auto;
+}
+/* --- END Main Styles --- */
+
+
+
+/* --- Start @media screen --- */
+
+
+@media screen and (min-width: 65em) {
+	html {
+      font-size: 100%;
+   }
+
+   .container {
+      display: flex;
+      flex-wrap: wrap;
+      width:75%;
+      max-width: 60rem;
+      margin: 0 auto;
+   }
+
+   .header {
+      width: 100%;
+   }
+
+   .callout {
+      font-size: 2rem;
+      padding: 0.8rem;
+   }
+
+   .nav {
+   flex-basis: 30%;
+   padding: 1rem;
+   }
+
+   .nav .nav__list {
+      padding: 0.1rem;
+   }
+
+   .nav .nav__list li {
+   padding: 0.5rem;
+   display: block;
+   }
+
+   .nav .nav__list a {
+      display: inline-block;
+      width: 90%;
+      font-size: 1rem;
+      margin: 0.2rem;
+      padding: 0.3rem;
+   }
+
+   .nav .nav__link:hover, 
+   .nav .nav__link:active, 
+   .nav .nav__link:focus {
+      color: rgb(19, 18, 18);
+   }
+
+   .main {
+      flex: 1;
+      padding: 0 1rem;
+      border-left: 1px solid #132517;
+   }
+
+   .main p {
+      padding: 5px;
+      font-size: 1rem;
+      line-height: 1.2
+      }
+
+   .main__img{
+      float:left;    
+   }
+
+}
+
+/* END @media screen */
+
+/* --------------- Start aside Styles ------------------ */
+
+.aside {
+   margin: 1.5rem auto;
+   padding: 1rem;
+   border-left: 0.04rem solid #9ca3a8;
+   float:left;
+   border-radius: 1em;
+   background: #738277;
+   color: #fafafa;
+}
+/* --- END aside Styles --- */
+
+/* --------------- Start Footer Styles ------------------ */
+
+.footer {
+   width: 100%;
+   color: #000;
+   background: #efefef;
+   padding: 0.5rem;
+   border-top: 0.04rem solid #9ca3a8;
+}
+
+.footer__items {
+   padding-bottom: 1.3rem;
+}
+
+.footer__list{
+   font-size: 0;
+}
+
+.footer__list > li {
+   position: relative;
+	display: inline-block;
+	margin: 0rem 0.5rem;
+	padding: 0.9rem;
+}
+
+.footer__link {
+   text-decoration: none;
+	display: inline-block;
+	font-size: 0.9rem;
+	color: #000;
+	text-align: center;
+}
+
+.footer__link:hover {
+   font-size: 0.95rem;
+   text-decoration: underline;
+   color: #656569;
+}
+/* ---------------END Footer Styles------------------ */
+
+
+
+
+
+
+
+
+/* ==========================================================================
+Helper classes
+========================================================================== */
+
+/*
+* Hide visually and from screen readers
+*/
+
+.hidden {
+display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.visuallyhidden {
+border: 0;
+clip: rect(0 0 0 0);
+height: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+width: 1px;
+white-space: nowrap; /* 1 */
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+clip: auto;
+height: auto;
+margin: 0;
+overflow: visible;
+position: static;
+width: auto;
+white-space: inherit;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+content: " "; /* 1 */
+display: table; /* 2 */
+}
+
+.clearfix:after {
+clear: both;
+}
+
+
+/* ==========================================================================
+EXAMPLE Media Queries for Responsive Design.
+These examples override the primary ('mobile first') styles.
+Modify as content requires.
+========================================================================== */
+
+@media only screen and (min-width: 35em) {
+/* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+   (-webkit-min-device-pixel-ratio: 1.25),
+   (min-resolution: 1.25dppx),
+   (min-resolution: 120dpi) {
+/* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+Print styles.
+Inlined to avoid the additional HTTP request:
+https://www.phpied.com/delay-loading-your-print-css/
+========================================================================== */
+
+@media print {
+*,
+*:before,
+*:after {
+   background: transparent !important;
+   color: #000 !important; /* Black prints faster */
+   -webkit-box-shadow: none !important;
+   box-shadow: none !important;
+   text-shadow: none !important;
+}
+
+a,
+a:visited {
+   text-decoration: underline;
+}
+
+a[href]:after {
+   content: " (" attr(href) ")";
+}
+
+abbr[title]:after {
+   content: " (" attr(title) ")";
+}
+
+/*
+* Don't show links that are fragment identifiers,
+* or use the `javascript:` pseudo protocol
+*/
+
+a[href^="#"]:after,
+a[href^="javascript:"]:after {
+   content: "";
+}
+
+pre {
+   white-space: pre-wrap !important;
+}
+pre,
+blockquote {
+   border: 1px solid #999;
+   page-break-inside: avoid;
+}
+
+/*
+* Printing Tables:
+* http://css-discuss.incutio.com/wiki/Printing_Tables
+*/
+
+thead {
+   display: table-header-group;
+}
+
+tr,
+img {
+   page-break-inside: avoid;
+}
+
+p,
+h2,
+h3 {
+   orphans: 3;
+   widows: 3;
+}
+
+h2,
+h3 {
+   page-break-after: avoid;
+}
+}
+
+

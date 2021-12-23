@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery Mobile</title>
+<link rel="stylesheet" href="lib/css/jquery.mobile-1.4.5.min.css">
+<script src="lib/js/jquery.min.js"></script>
+<script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+   <div data-role="page" id="p1">
+      <!-- Start Header -->
+      <div data-role="header"  data-theme="b">
+         <h1>Header</h1>
+      </div> 
+      <!-- END Header -->
+
+      <!-- Start main -->
+      <div role="main" class="ui-content">
+         <h1>Herzlich willkommen zur jQuery Mobile</h1>
+         <!-- Start Dialog -->
+         <div data-role="content">
+            <a href="#p2" data-transition="pop" class="ui-btn ui-corner-all ui-overlay-shadow">Dialog aufrufen</a>
+         </div>
+         <!-- END Dialog -->
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt expedita eos quibusdam optio corrupti, natus nobis illo debitis deleniti excepturi ab maxime animi dolorem cum, explicabo ipsum ad exercitationem vero?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, iusto!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, autem.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+         <ul data-role="listview" data-inset="true">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">JQuery</a></li>
+         </ul>
+      </div>
+      <!-- END Dialog -->
+
+      <!-- Start Footer -->
+      <div data-role="footer" data-position="fixed" data-theme="b">
+         <h4>Footer</h4>
+      </div>
+      <!-- END Footer -->
+   </div>
+
+   <!-- Start Page 2 -->
+   <div data-role="page" id="p2" data-dialog="true"  data-theme="b">
+      <div data-role="header">
+         <h1>Dialog</h1>
+      </div>
+      <div data-role="content" data-theme="a">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus.<br/>
+            <a data-rel="back" href="#" class="ui-btn ui-corner-all ui-overlay-shadow " >Zurück</a>
+         </p>
+      </div>
+   </div>
+   <!-- END Page 2 -->
+</body>
+</html>
